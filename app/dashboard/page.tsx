@@ -1,7 +1,16 @@
 "use client";
-import React, { Activity, useEffect, useState } from "react";
-import { motion, AnimatePresence, isZeroValueString } from "framer-motion";
+
+
+
+
+
+
+
+
+import React, { useEffect, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import {
+  Activity,
   ArrowDown,
   ArrowDownRight,
   ArrowUpRight,

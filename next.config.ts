@@ -1,7 +1,9 @@
+import { i } from "framer-motion/client";
 import type { NextConfig } from "next";
+import { ignoreListAnonymousStackFramesIfSandwiched } from "next/dist/next-devtools/server/shared";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+
 };
 
 export default nextConfig;

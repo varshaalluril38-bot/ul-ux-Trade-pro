@@ -14,18 +14,16 @@ import {
   Shield,
   Zap,
 } from "lucide-react";
-import { motion, useInView } from "framer-motion";
+import { motion } from "framer-motion";
 import { useRef } from "react";
 import { useRouter } from "next/navigation";
 const Animatedsection = ({ children }: any) => {
-  const ref = useRef(null);
-  const isinview = useInView(ref, { once: true, amount: 0.3 });
   return (
     <motion.section
-      ref={ref}
       initial={{ opacity: 0, y: 50 }}
-      animate={isinview ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
+      viewport={{ once: true, amount: 0.3 }}
     >
       {children}
     </motion.section>
